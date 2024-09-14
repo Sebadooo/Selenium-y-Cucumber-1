@@ -1,32 +1,56 @@
-# Web CE‐Templates-UI
+1. Crear un proyecto node
+   npm init -y
 
-One Paragraph of project description goes here
-  
-## Notification Builder
-[![Quality Gate Status](https://sonarqube.andreani.com/api/project_badges/measure?project=customer-experience_ce-templates-ui&metric=alert_status&token=sqb_a5ad08f12a5c547ab8b0e3fe5cfc8446c7b5b7c9)](https://sonarqube.andreani.com/dashboard?id=customer-experience_ce-templates-ui)
-[![Code Smells](https://sonarqube.andreani.com/api/project_badges/measure?project=customer-experience_ce-templates-ui&metric=code_smells&token=sqb_a5ad08f12a5c547ab8b0e3fe5cfc8446c7b5b7c9)](https://sonarqube.andreani.com/dashboard?id=customer-experience_ce-templates-ui)
-[![Coverage](https://sonarqube.andreani.com/api/project_badges/measure?project=customer-experience_ce-templates-ui&metric=coverage&token=sqb_a5ad08f12a5c547ab8b0e3fe5cfc8446c7b5b7c9)](https://sonarqube.andreani.com/dashboard?id=customer-experience_ce-templates-ui)
-[![Technical Debt](https://sonarqube.andreani.com/api/project_badges/measure?project=customer-experience_ce-templates-ui&metric=sqale_index&token=sqb_a5ad08f12a5c547ab8b0e3fe5cfc8446c7b5b7c9)](https://sonarqube.andreani.com/dashboard?id=customer-experience_ce-templates-ui)
-[![Vulnerabilities](https://sonarqube.andreani.com/api/project_badges/measure?project=customer-experience_ce-templates-ui&metric=vulnerabilities&token=sqb_a5ad08f12a5c547ab8b0e3fe5cfc8446c7b5b7c9)](https://sonarqube.andreani.com/dashboard?id=customer-experience_ce-templates-ui)
-[![Reliability Rating](https://sonarqube.andreani.com/api/project_badges/measure?project=customer-experience_ce-templates-ui&metric=reliability_rating&token=sqb_a5ad08f12a5c547ab8b0e3fe5cfc8446c7b5b7c9)](https://sonarqube.andreani.com/dashboard?id=customer-experience_ce-templates-ui)
-[![Security Rating](https://sonarqube.andreani.com/api/project_badges/measure?project=customer-experience_ce-templates-ui&metric=security_rating&token=sqb_a5ad08f12a5c547ab8b0e3fe5cfc8446c7b5b7c9)](https://sonarqube.andreani.com/dashboard?id=customer-experience_ce-templates-ui)
+2. Instalar Typescript global
+   pnpm i -D typescript --global
 
-[![continuos-delivery](https://github.com/customer-experience/ce-templates-ui/actions/workflows/continuos-delivery.yml/badge.svg)](https://github.com/customer-experience/ce-templates-ui/actions/workflows/continuos-delivery.yml)
-[![continuos-deployment](https://github.com/customer-experience/ce-templates-ui/actions/workflows/continuos-deployment.yml/badge.svg)](https://github.com/customer-experience/ce-templates-ui/actions/workflows/continuos-deployment.yml)
-[![continuos-integration](https://github.com/customer-experience/ce-templates-ui/actions/workflows/continuos-integration.yml/badge.svg)](https://github.com/customer-experience/ce-templates-ui/actions/workflows/continuos-integration.yml)
-  
-## Diagram
-  
-![CE-20240522 gray scale - CE Template UI](https://github.com/customer-experience/ce-templates-ui/assets/145587757/0c044933-bd28-4b04-a239-8648cd8244e3)
-  
-## Environments
-  
-### Development
-* [Web](https://templates-ui-constancias-test.apps.ocptest.andreani.com.ar)
-* [Live Logs]()
-  
-### Qa
-* [Web](https://templates-ui-constancias-qa.apps.ocpqa.andreani.com.ar)
-  
-### Production
-* [Web](https://templates-ui-constancias-prod.apps.andreani.com.ar)
+3. Generar el archivo de configuración de Typescript
+   tsc --init
+
+4. Instalar Cucumber
+   pnpm i -D @cucumber/cucumber
+
+5. Instalar jest
+   pnpm add --save-dev jest
+
+6. run the cucumber-js command
+   ./node_modules/.bin/cucumber-js
+
+7. Edit package.json and change the test line under the scripts from it’s default to cucumber-js
+   "scripts": {
+   "test": "cucumber-js features"
+   },
+
+8. run test
+   npm run test
+
+9. Instalar servidor http
+   npm i -D http-server
+
+10. Instalar selenium
+    npm i -D selenium-webdriver
+
+11. Instalar chromedriver
+    npm i -D chromedriver --global
+
+12. Run server
+    ./node_modules/.bin/http-server -p 8090 ./web
+
+13. Edit package.json
+    "scripts": {
+    "test": "cucumber-js features",
+    "server": "http-server -p 8090 ./web"
+    },
+
+14. Run server
+    npm run server
+
+15. Tags
+    ./node_modules/.bin/cucumber-js features --tags '@mytag'
+    ./node_modules/.bin/cucumber-js features --tags '@mytag2'
+    ./node_modules/@cucumber/cucumber/bin/cucumber-js features --tags '@mytag'
+
+16. Reports
+    ./node_modules/.bin/cucumber-js features --format progress-bar --format json:./reports/cucumber-report.json --format html:./reports/cucumber-report.html
+
+node ./node_modules/@cucumber/cucumber/bin/cucumber-js features --tags '@mytag3'

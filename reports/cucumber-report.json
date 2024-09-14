@@ -1,0 +1,961 @@
+[
+  {
+    "description": "    Como usuario web, quiero ingresar ",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;login-failed-1-email-not-found",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "LogIn failed 1 email not found",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2412725999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 869095100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3034917599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 12,
+            "name": "test2 se ingresa el email \"TestFailed@yopmail.com\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:40"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19241199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "test2 se ingresa la Contraseña \"Test1234\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51265000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "test2 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 57677300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "test2 se debería mostrar la leyenda \"Parece que no podemos encontrar su cuenta.\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3051434900
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login-1",
+            "line": 10
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-failed-2-invalid-email-format",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "LogIn failed 2 invalid email format",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1254270799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 536399400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3026381400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "test3 se ingresa el email \"Test1yopmail.com\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:84"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3030315900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "test3 se ingresa la Contraseña \"Test1234\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:94"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51651200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "test3 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62061700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "test3 se debería mostrar la leyenda \"Parece que no podemos encontrar su cuenta.\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:107"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4521189599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login-2",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-failed-3-wrong-password",
+        "keyword": "Scenario",
+        "line": 25,
+        "name": "LogIn failed 3 wrong password",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1615322700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 547240300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3034189300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 26,
+            "name": "test4 se ingresa el email \"Test1@yopmail.com\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:128"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3022831200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "test4 se ingresa la Contraseña \"12345678\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:138"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47885899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "test4 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:145"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68250500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "test4 se debería mostrar la leyenda \"Parece que no podemos encontrar su cuenta.\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:151"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3028954599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login-3",
+            "line": 24
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-failed-4-empty-email",
+        "keyword": "Scenario",
+        "line": 32,
+        "name": "LogIn failed 4 Empty email",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1367012799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 534936999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3026510600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 33,
+            "name": "test5 se ingresa la Contraseña \"Test1234\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:172"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8523600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "test5 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:179"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 47014199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "test5 se debería mostrar la leyenda \"Ingrese su Email para continuar\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:185"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4543213899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login-5",
+            "line": 31
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-failed-5-empty-password",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "LogIn failed 5 Empty password",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1276375599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 572161900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3032527900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 39,
+            "name": "test6 se ingresa el email \"TestFailed@yopmail.com\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:206"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13443100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "test6 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:215"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49944899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "test6 se debería mostrar la leyenda \"Ingrese su contraseña para continuar\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:221"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3018834399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login-5",
+            "line": 37
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;login-succesfully",
+        "keyword": "Scenario",
+        "line": 44,
+        "name": "LogIn succesfully",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1320863199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 537259799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3040730799
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 45,
+            "name": "test7 se ingresa el email \"Test1@yopmail.com\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:239"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9155300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 46,
+            "name": "test7 se ingresa la Contraseña \"Test1234\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:246"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44482700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 47,
+            "name": "test7 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:253"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 68261899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "test7 se debería mostrar la leyenda \"Hola Juan Test1!\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:259"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4532765399
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login-6",
+            "line": 43
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;logout-from-user-name",
+        "keyword": "Scenario",
+        "line": 51,
+        "name": "logout from user name",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1690647100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 560844100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3029604300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 52,
+            "name": "test8 se inicia sesión correctamente en la página de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:277"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99917199
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "test8 se debería mostrar la leyenda \"Hola Juan Test1!\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:293"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4551962200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "test8 se hace click sobre la leyenda \"Cerrar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:308"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10438499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 55,
+            "name": "test8 se debería volver a la página inicial y ver \"Por favor inicia sesión para ver la información de usuario.\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:314"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4529710300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout-1",
+            "line": 50
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;logout-from-burger-menu",
+        "keyword": "Scenario",
+        "line": 58,
+        "name": "logout from burger menu",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "test1 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1470933399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "test1 se presiona el boton \"Iniciar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 547288099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test1 se debería mostrar la leyenda \"Que bueno que estés acá\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3023866200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 59,
+            "name": "test9 se inicia sesión correctamente en la página de CE",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:336"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 90414300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "test9 se debería mostrar la leyenda \"Hola Juan Test1!\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:352"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4531665200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "test9 se hace click en el menu hamburguesa",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:367"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55960500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 62,
+            "name": "test9 se selecciona la opción \"Cerrar sesión\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:373"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1264093200
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "test9 se debería volver a la página inicial y ver \"Por favor inicia sesión para ver la información de usuario.\"",
+            "match": {
+              "location": "features\\steps\\AccountRelated.steps.js:379"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4027882899
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@logout-2",
+            "line": 57
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "LogIn",
+    "tags": [],
+    "uri": "features\\AccountRelated.feature"
+  },
+  {
+    "description": "    Como usuario web, quiero verificar que la página \"Templates\" funcione correctamente \n    respetando las funcionalidades especificadas por el cliente",
+    "elements": [
+      {
+        "description": "",
+        "id": "templates-page-verification;access-template-page",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Access Template page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "test10 estando en la página inicial de CE",
+            "match": {
+              "location": "features\\steps\\TemplatesPage.steps.js:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2172817100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "test10 se realiza el inicio de sesión exitoso",
+            "match": {
+              "location": "features\\steps\\TemplatesPage.steps.js:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3094685699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "test10 se debería mostrar la leyenda \"Hola Juan Test1!\"",
+            "match": {
+              "location": "features\\steps\\TemplatesPage.steps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4544217900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "test11 se hace click en el menu hamburguesa",
+            "match": {
+              "location": "features\\steps\\TemplatesPage.steps.js:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62551800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "test11 se hace click en la opción \"Templates\"",
+            "match": {
+              "location": "features\\steps\\TemplatesPage.steps.js:56"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 78814400
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "test11 se debería mostrar la leyenda \"Templates\"",
+            "match": {
+              "location": "features\\steps\\TemplatesPage.steps.js:62"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4040843699
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@templatePage-1",
+            "line": 11
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "templates-page-verification",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Templates page verification",
+    "tags": [],
+    "uri": "features\\TemplatesPage.feature"
+  }
+]
